@@ -29,3 +29,21 @@ efontUTF16spiffs.hより前に、バッファサイズを宣言することで�
 ## M5StickC以外での利用方法
 
 描画周りについては機種ごとに違うため、各自機種に合わせて作り直してください。
+
+## サンプルコード
+```
+#include <M5StickC.h>
+//#define EFONT_BUF_SIZE 64
+#include "efontUTF16spiffsM5StickC.h"
+
+void setup() {
+  M5.begin();
+  M5.Lcd.setRotation(0);
+  M5.Lcd.setCursor(0, 0);
+
+  printEfont("新しい朝が来た希望の朝がabcd12345()+-１２３４５", 0, 16*0);
+}
+
+void loop() {
+}
+```
