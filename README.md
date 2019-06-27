@@ -1,8 +1,13 @@
-# efont UTF16 Font Data(SPIFFS)
+# [実験] efont UTF16 Font Data(SPIFFS)
 
 http://openlab.ring.gr.jp/efont/unicode/
 
 /efont/ Unicode Font をArduinoで使えるようにしました。
+
+## 備考
+
+本プロジェクトは実験的なものです。
+実際に利用するのであれば文字単位で読み込める[efont for Arduino](https://github.com/tanakamasayuki/efont)をおすすめします。
 
 ## 概要
 
